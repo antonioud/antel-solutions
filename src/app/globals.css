@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #04111f;
+  --color-navy-900: #061a30;
+  --color-navy: #081f38;
+  --color-navy-800: #0c2a4a;
+  --color-corporate: #1e3a8a;
+  --color-accent: #3b82f6;
+  --color-sky: #8cb8f7;
+  --color-slate: #94a3b8;
+  --color-ink: #0b1b2e;
+  --color-muted: #475569;
+  --color-mist: #e2e8f0;
+  --color-cloud: #f3f6fa;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --ease-cinema: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection {
+    background: var(--color-accent);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-[1320px] px-5 sm:px-8 lg:px-12;
+  }
+  .eyebrow {
+    @apply text-[0.72rem] font-semibold uppercase tracking-[0.22em] sm:text-xs;
+  }
+  .display {
+    @apply font-semibold tracking-[-0.025em] text-balance;
+    line-height: 1.04;
+  }
+  .lede {
+    @apply text-base leading-relaxed sm:text-lg sm:leading-[1.7];
+  }
+  /* Cool, consistent colour grade over all photography */
+  .grade::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgb(8 31 56 / 0.08), rgb(8 31 56 / 0.28));
+    mix-blend-mode: multiply;
+  }
+  .grade img {
+    filter: saturate(0.88) contrast(1.04);
+  }
+}
+
+/* ---------- Motion ---------- */
+
+@keyframes hero-settle {
+  from { transform: scale(1.1); }
+  to { transform: scale(1.02); }
+}
+.hero-settle {
+  animation: hero-settle 18s var(--ease-cinema) both;
+}
+
+/* Reveal: only hidden once JS has marked the document, so content never disappears without JS */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition:
+    opacity 1s var(--ease-cinema),
+    transform 1.1s var(--ease-cinema);
+  transition-delay: var(--delay, 0ms);
+}
+/* The clip sits on the child: a fully clipped target would never register as intersecting */
+.js [data-reveal="mask"] {
+  opacity: 1;
+  transform: none;
+}
+.js [data-reveal="mask"] > * {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 1.4s var(--ease-cinema);
+  transition-delay: var(--delay, 0ms);
+}
+.js [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+.js [data-reveal="mask"].is-visible > * {
+  clip-path: inset(0 0 0 0);
+}
+
+[data-parallax] {
+  will-change: transform;
+}
+
+.img-hover img {
+  transition: transform 1.2s var(--ease-cinema);
+}
+.img-hover:hover img,
+.img-hover:focus-within img {
+  transform: scale(1.04);
+}
+
+@media (max-width: 767px) {
+  .js [data-reveal] {
+    transform: translate3d(0, 12px, 0);
+    transition-duration: 0.7s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .js [data-reveal],
+  .js [data-reveal="mask"] > * {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+  }
+  [data-parallax] {
+    transform: none !important;
+  }
+}
