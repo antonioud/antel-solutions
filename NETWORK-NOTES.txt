@@ -1,0 +1,16 @@
+International business experience section
+
+Placement: after Louis’s biography on About, /about/#international-experience.
+Source: Louis’s business-country list supplied by the user, October 2026. This replaces the earlier estimated 62 figure and all sample destinations.
+61 business markets = 60 countries plus Puerto Rico. The display label is Countries & territories. The total is calculated from businessMarkets in src/lib/network.ts, not manually entered.
+San Salvador is interpreted as El Salvador (SLV); Holland normalized to Netherlands; US to United States; UK to United Kingdom; UAE to United Arab Emirates; Turkey to Türkiye. Puerto Rico is included as a territory. Personal-only visits and airport connections are excluded. Bulgaria and Romania are explicitly excluded by Louis; no unlisted destinations are used for arcs.
+
+The animation now builds a persistent branching tree. First USA connects to China. China then connects to Japan and Singapore. Each next wave branches from previously reached markets into two or three new markets per parent until all 61 are connected. Country shapes highlight on arrival, and the counter follows the growing network. Earlier arches stay visible throughout; final network has 60 edges, with no replay. The branching sequence is a visual illustration, not historical transaction routes or chronology. It replaces the former five featured-location sequence and USA hub-and-spoke final view.
+
+Counters start on entering view. Five waves run about 7.5 seconds (1.5 seconds per wave, 1.1-second arc draws with up to 150ms staggering), then remain static. Skip animation completes the existing network without removing its earlier arches. Elapsed time pauses offscreen or in a hidden document. Reduced-motion visitors see the complete static network. Years remain attributed to Antel’s existing 30+ years of relationships; 2 languages is unchanged. The full text directory remains available.
+
+Geometry: existing @d3-maps/atlas@1.0.0 countries-110m (Natural Earth), converted with topojson-client@3.1.0 and projected with D3 7.9.0 geoNaturalEarth1. Singapore, absent at 110m, is added from Natural Earth 50m country geometry using the same projection. Source: https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson . Paths are local in src/data/world-map.json; no runtime map/CDN requests.
+
+Content: src/lib/network.ts. Rendering: src/components/international-experience.tsx.
+
+Arches use a shared SVG blur-and-source merge for a restrained cool-blue glow. New connections have a brighter core; settled arches retain a softer glow. The filter is applied once to the connection group, not separately to every path. No pulsing or extra motion is introduced.

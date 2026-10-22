@@ -1,57 +1,9 @@
-import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Motion from "@/components/Motion";
-import { site } from "@/lib/site";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-inter" });
-
-export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
-  title: { default: site.title, template: "%s | Antel Solutions" },
-  description: site.description,
-  applicationName: site.name,
-  alternates: { canonical: "/" },
-  openGraph: {
-    type: "website",
-    siteName: site.name,
-    title: site.title,
-    description: site.description,
-    url: "/",
-    locale: "en_US",
-  },
-  twitter: { card: "summary_large_image", title: site.title, description: site.description },
-  robots: { index: true, follow: true },
-};
-
-export const viewport: Viewport = { themeColor: "#04111f", colorScheme: "light" };
-
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: site.name,
-  url: site.url,
-  logo: `${site.url}/icon.svg`,
-  description: site.description,
-  slogan: "Global Connections. Real Opportunities.",
-};
-
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="en" className={inter.variable} suppressHydrationWarning>
-      <head>
-        {/* Marks JS as available so reveal animations can start hidden without hiding content for no-JS visitors */}
-        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-      </head>
-      <body>
-        <Header />
-        <main id="main">{children}</main>
-        <Footer />
-        <Motion />
-      </body>
-    </html>
-  );
-}
+import type { Metadata } from 'next';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+import Reveal from '@/components/reveal';
+import NavigationScroll from '@/components/navigation-scroll';
+import {origin} from '@/lib/seo';
+import './globals.css';
+export const metadata:Metadata={metadataBase:new URL(origin),title:{default:'Antel Solutions | International Business, Trade & Strategic Relationships',template:'%s | Antel Solutions'},description:'Antel Solutions brings more than 30 years of trusted international relationships to opportunities in trade, finance, technology, commodities, investment and global business development.'};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><a className="skip-link" href="#main">Skip to content</a><NavigationScroll/><Header/><main id="main">{children}</main><Footer/><Reveal/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@type':'Organization',name:'Antel Solutions',url:origin,description:'International business development, trade, finance and strategic relationships.'}).replace(/</g,'\\u003c')}}/></body></html>}

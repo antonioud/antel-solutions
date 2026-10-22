@@ -1,0 +1,21 @@
+Louis Antoniou — working biography
+
+The portrait and introduction appear on Home; the fuller biography appears at /about/#louis-antoniou.
+Editable biography: src/lib/profile.ts.
+
+The biography now draws on the LinkedIn screenshots supplied by the user in October 2026:
+- President, Antel Solutions, since September 2012; consulting services across industries.
+- Co-Founder / President International Business Development, MEDTL Medical Technologies Ltd, listed in Nicosia, Cyprus.
+- Owner, Integrity Supplements LLC / DBA BioOptimal.
+- Former Vice President International Business Development and board member, G Medical Innovations.
+- Former President, Antel Communications.
+
+International travel is described broadly using Louis’s message supplied by the user. No individual destinations or numeric business-country claim have been added to the biography. Louis subsequently supplied his business-specific destination list: 61 markets including Puerto Rico. The map and directory now use that list; see NETWORK-NOTES.txt. The biography retains broad travel wording. No transaction values, clients, licenses or regulatory credentials are inferred.
+
+The closing paragraph is editorial positioning, not a quotation from Louis. Future revisions can add specific examples, preferred personal voice and confirmed market experience.
+
+Portrait: user-supplied photograph edited with ImageGen to remove other subjects/background, straighten posture and give a composed expression. Earlier versions are retained in the sibling louis-portrait deliverables directory. Optimized WebP copies are included in public/images.
+
+Portrait refinement: sincere business expression and soft natural lighting, edited with built-in ImageGen. Current website assets: public/images/louis-antoniou-sincere.webp and louis-antoniou-sincere-560.webp. Earlier assets retained. Prompt and full-resolution output are in ../louis-portrait/.
+
+Current portrait: confident expression and posture refinement, requested by the user. Built-in ImageGen; public/images/louis-antoniou-confident.webp and -560.webp. Full-resolution source and prompt in ../louis-portrait/CONFIDENT-PORTRAIT-NOTES.txt. Previous sincere version retained.
