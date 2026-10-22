@@ -13,11 +13,11 @@ export default function LouisProfile({ full = false }: { full?: boolean }) {
         <figcaption>{louisProfile.name}<span>{louisProfile.role}</span></figcaption>
       </figure>
       <div className="louis-copy" data-reveal>
-        <Label>THE PERSON BEHIND THE RELATIONSHIPS</Label>
+        <Label>LEADERSHIP</Label>
         <h2 id={full ? 'louis-bio-heading' : 'louis-intro-heading'}>{full ? 'Louis Antoniou' : <>An international outlook.<br /><span className="blue-text">A personal approach.</span></>}</h2>
         <p className="lead">{louisProfile.introduction}</p>
         <div className="prose">
-          {full ? louisProfile.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>) : <p>{louisProfile.summary}</p>}
+          {full ? <><p>{louisProfile.summary}</p><details className="leadership-details"><summary>Career background</summary>{louisProfile.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</details></> : <p>{louisProfile.summary}</p>}
         </div>
         {!full && <Link href="/about/#louis-antoniou" className="text-link">Meet Louis Antoniou <Arrow /></Link>}
       </div>

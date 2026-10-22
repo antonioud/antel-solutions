@@ -4,7 +4,7 @@ A complete Next.js App Router / TypeScript / Tailwind CSS website with Home, Abo
 
 ## Current design
 
-The site now implements the selected Intimate Cinematic direction: a quiet conversation setting, the headline “The right relationships. A world of possibility.”, a shorter homepage, four broad capability areas and a more personal tone. See `INTIMATE-CINEMATIC.md` for the revision and new image provenance. Louis Antoniou’s edited portrait and a broad working biography now appear on Home and About. The biography uses career details from the supplied LinkedIn screenshots and broad international travel context from Louis’s message; see `BIO-NOTES.txt` for sources and the content location.
+The site now implements the selected Intimate Cinematic direction: a quiet conversation setting, the headline “The right relationships. A world of possibility.”, four broad capability areas and cinematic navy imagery. The company positioning revision leads Home with capabilities and sectors, removes the homepage portrait, and puts company values and process before a compact leadership biography on About. See `INTIMATE-CINEMATIC.md` for the revision and new image provenance. Louis Antoniou’s edited portrait and biography appear in the About leadership section, with expandable career details. The biography uses career details from the supplied LinkedIn screenshots and broad international travel context from Louis’s message; see `BIO-NOTES.txt` for sources and the content location.
 
 ## Run locally
 
@@ -53,7 +53,7 @@ Before public launch, confirm an actual submission reaches the intended inbox. R
 
 ## Distinct section photography
 
-Hero, editorial and closing-section backgrounds each use a unique image across the main pages. Six newly generated scenes complement existing unused assets; see ASSETS.md for the complete prompts. Legal and error pages use a plain navy header. Louis’s portrait remains consistent between his homepage introduction and About biography.
+Hero, editorial and closing-section backgrounds each use a unique image across the main pages. Six newly generated scenes complement existing unused assets; see ASSETS.md for the complete prompts. Legal and error pages use a plain navy header. Louis’s portrait is used in the About leadership section.
 
 ## Content and assets
 
