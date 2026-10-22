@@ -29,7 +29,7 @@ The deployable site is generated in `out/`. Run `pnpm start` to serve the produc
 
 ### Vercel
 
-Import this directory as a repository. The included vercel.json selects Next.js, installs the pinned pnpm version, builds the site and publishes out/. The former /network path redirects to /our-network/. The default site URL is https://antel-solutions.vercel.app; set NEXT_PUBLIC_SITE_URL if using another domain. No server runtime or database is required.
+Import this directory as a repository. The included vercel.json selects Next.js, installs the pinned pnpm version and points the Vercel adapter at .next/ for its build metadata. Vercel detects the static export and publishes the generated out/ files. Do not set the Next.js preset’s Output Directory to out/: that makes its adapter look for routes-manifest.json in the wrong folder. The former /network path redirects to /our-network/. The default site URL is https://antel-solutions.vercel.app; set NEXT_PUBLIC_SITE_URL if using another domain. No server runtime or database is required.
 
 ### Netlify / Cloudflare Pages / other static hosts
 
