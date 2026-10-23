@@ -1,14 +1,11 @@
-// Career details from Louis’s LinkedIn screenshots supplied by the user, October 2026.
+// Sources: Louis’s résumé and LinkedIn screenshots supplied by the user, October 2026.
 // Business markets are confirmed separately in network.ts.
 export const louisProfile = {
   name: 'Louis Antoniou',
   role: 'President, Antel Solutions',
-  introduction: 'Louis Antoniou, President of Antel Solutions since 2012, brings experience in international business development, executive leadership and business ownership.',
-  summary: 'His background spans consulting, telecommunications, medical technology and nutritional supplements. This cross-sector experience informs Antel’s approach to commercial opportunities, market development and strategic relationships.',
+  introduction: 'Louis Antoniou, President of Antel Solutions since 2012, brings more than four decades of experience in international business development, telecommunications and strategic partnerships.',
+  summary: 'He helped establish Audiovox’s cellular communications business in 1984 and later held senior leadership roles at Audiovox, UTStarcom and Personal Communications Devices. His work has spanned product development, global distribution and market expansion, building relationships with manufacturers and wireless carriers across the Americas, Europe, Asia and beyond. That experience informs Antel’s approach to connecting businesses, resources and commercial opportunities.',
   paragraphs: [
-    'As President of Antel Solutions since 2012, Louis provides consulting services across industries. His career brings together business ownership, executive leadership and international business development, giving him a broad perspective on the priorities businesses face as they explore new opportunities.',
-    'Alongside Antel Solutions, Louis serves as Co-Founder and President of International Business Development at MEDTL Medical Technologies Ltd, based in Cyprus. He also owns Integrity Supplements LLC, operating as BioOptimal.',
-    'Previously, Louis served as Vice President of International Business Development and a member of the Board of Directors at G Medical Innovations. Before that, he was President of Antel Communications.',
-    'Louis has conducted business across the Americas, Europe, the Middle East, Asia, Africa and Oceania. His experience across different markets and business cultures supports Antel’s international perspective and understanding of commercial relationships.',
+    'Louis also served on the board of Personal Communications Devices and has held leadership roles in medical technology. He holds a bachelor’s degree in economics from the University of Bridgeport.',
   ],
 };

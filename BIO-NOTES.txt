@@ -1,18 +1,16 @@
-Louis Antoniou — working biography
+Louis Antoniou — leadership biography
 
-The portrait and introduction appear on Home; the fuller biography appears at /about/#louis-antoniou.
+The concise biography and portrait appear on About at /about/#louis-antoniou, after the company overview, values and process. Home focuses on the company.
 Editable biography: src/lib/profile.ts.
 
-The biography now draws on the LinkedIn screenshots supplied by the user in October 2026:
-- President, Antel Solutions, since September 2012; consulting services across industries.
-- Co-Founder / President International Business Development, MEDTL Medical Technologies Ltd, listed in Nicosia, Cyprus.
-- Owner, Integrity Supplements LLC / DBA BioOptimal.
-- Former Vice President International Business Development and board member, G Medical Innovations.
-- Former President, Antel Communications.
+Updated October 23, 2026 from CV_Louis Antoniou_v1.docx supplied by the user, together with the earlier LinkedIn screenshots.
 
-International travel is described broadly using Louis’s message supplied by the user. No individual destinations or numeric business-country claim have been added to the biography. Louis subsequently supplied his business-specific destination list: 61 markets including Puerto Rico. The map and directory now use that list; see NETWORK-NOTES.txt. The biography retains broad travel wording. No transaction values, clients, licenses or regulatory credentials are inferred.
+Main bio: approximately 90 words covering Antel presidency since 2012, more than four decades of experience, Audiovox cellular business development in 1984, senior roles at Audiovox, UTStarcom and Personal Communications Devices, and international distribution and market expansion.
+Expandable career background: approximately 35 words on the Personal Communications Devices board role, medical technology leadership and economics degree from the University of Bridgeport.
 
-The closing paragraph is editorial positioning, not a quotation from Louis. Future revisions can add specific examples, preferred personal voice and confirmed market experience.
+The résumé contains conflicting dates in its Antel Corporation history (1988–1993 heading versus 1998 in the narrative); those dates are omitted. Company revenue figures, sales values, named carrier/manufacturer accounts and superlatives are omitted. Past professional relationships are not represented as Antel clients. No private contact information or résumé attachment is published.
+
+The international map remains based on Louis’s separately confirmed list of 61 business markets, including Puerto Rico. Its counters and animation are unchanged.
 
 Portrait: user-supplied photograph edited with ImageGen to remove other subjects/background, straighten posture and give a composed expression. Earlier versions are retained in the sibling louis-portrait deliverables directory. Optimized WebP copies are included in public/images.
 
