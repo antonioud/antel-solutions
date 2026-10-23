@@ -143,3 +143,6 @@
 .leadership-details[open] summary{margin-bottom:20px}
 @media(max-width:1000px){.company-sector-list{grid-template-columns:repeat(2,minmax(0,1fr))}.louis-full .louis-layout{gap:40px;grid-template-columns:240px minmax(0,1fr)}}
 @media(max-width:760px){.louis-full .louis-layout{grid-template-columns:1fr;gap:32px}.louis-full .louis-figure{max-width:240px;margin:0}.company-sector-list{gap:0 22px}.company-sector-list a{font-size:15px;padding:19px 0}}
+
+/* Keep the leadership portrait beside the opening of the full career biography. */
+.louis-full .louis-layout{align-items:start}

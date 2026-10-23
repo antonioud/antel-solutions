@@ -4,7 +4,7 @@ A complete Next.js App Router / TypeScript / Tailwind CSS website with Home, Abo
 
 ## Current design
 
-The site now implements the selected Intimate Cinematic direction: a quiet conversation setting, the headline “The right relationships. A world of possibility.”, four broad capability areas and cinematic navy imagery. The company positioning revision leads Home with capabilities and sectors, removes the homepage portrait, and puts company values and process before a compact leadership biography on About. See `INTIMATE-CINEMATIC.md` for the revision and new image provenance. Louis Antoniou’s edited portrait and biography appear in the About leadership section, with expandable career details. The biography uses career details from the supplied LinkedIn screenshots and broad international travel context from Louis’s message; see `BIO-NOTES.txt` for sources and the content location.
+The site now implements the selected Intimate Cinematic direction: a quiet conversation setting, the headline “The right relationships. A world of possibility.”, four broad capability areas and cinematic navy imagery. The company positioning revision leads Home with capabilities and sectors, removes the homepage portrait, and puts company values and process before a leadership biography on About. See `INTIMATE-CINEMATIC.md` for the revision and new image provenance. Louis Antoniou’s edited portrait and biography appear in the About leadership section, with his full career biography. The biography uses career details from the supplied LinkedIn screenshots and broad international travel context from Louis’s message; see `BIO-NOTES.txt` for sources and the content location.
 
 ## Run locally
 

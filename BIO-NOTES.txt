@@ -1,16 +1,12 @@
-Louis Antoniou — leadership biography
+Louis Antoniou — full leadership biography
 
-The concise biography and portrait appear on About at /about/#louis-antoniou, after the company overview, values and process. Home focuses on the company.
-Editable biography: src/lib/profile.ts.
+Updated October 23, 2026. The user superseded the earlier request for a short bio and requested a substantive credibility-building biography. All paragraphs now display directly on About, with the company overview, values and process still preceding leadership.
 
-Updated October 23, 2026 from CV_Louis Antoniou_v1.docx supplied by the user, together with the earlier LinkedIn screenshots.
+Sources: CV_Louis Antoniou_v1.docx, earlier LinkedIn screenshots and separately confirmed business-market list, all supplied by the user.
 
-Main bio: approximately 90 words covering Antel presidency since 2012, more than four decades of experience, Audiovox cellular business development in 1984, senior roles at Audiovox, UTStarcom and Personal Communications Devices, and international distribution and market expansion.
-Expandable career background: approximately 35 words on the Personal Communications Devices board role, medical technology leadership and economics degree from the University of Bridgeport.
+The bio covers Audiovox career progression from 1977, the cellular division launched in 1984 with two people, product and distribution responsibilities, international sales leadership, participation in the Audiovox–Toshiba joint venture, UTStarcom and PCD executive roles, PCD board service, distribution-channel experience, later medical technology and business ownership, international perspective and economics degree.
 
-The résumé contains conflicting dates in its Antel Corporation history (1988–1993 heading versus 1998 in the narrative); those dates are omitted. Company revenue figures, sales values, named carrier/manufacturer accounts and superlatives are omitted. Past professional relationships are not represented as Antel clients. No private contact information or résumé attachment is published.
-
-The international map remains based on Louis’s separately confirmed list of 61 business markets, including Puerto Rico. Its counters and animation are unchanged.
+The résumé has conflicting dates in its Antel Corporation history; those dates are omitted. Revenue figures, sales values and promotional superlatives are omitted. Named manufacturers refer to Louis’s prior career relationships, not Antel clients. No résumé attachment or private contact information is published. Map counters and animation remain unchanged.
 
 Portrait: user-supplied photograph edited with ImageGen to remove other subjects/background, straighten posture and give a composed expression. Earlier versions are retained in the sibling louis-portrait deliverables directory. Optimized WebP copies are included in public/images.
 
